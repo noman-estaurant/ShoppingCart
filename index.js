@@ -1,13 +1,20 @@
 $(document).ready(function() {
     $("#empty").hide();
     //$("#notempty").hide();
-    //if is empty
+
+    //if is empty, use
     //$("#empty").show();
     //else
     //$("#notempty").show();
     //get data from ?
     // $("#main-meal .howmany").text("x "+??);
     // $("#main-meal .howmuch").text("$ "+??);
+    //create detail
+    var i;
+    for (i = 0; i < 2; i++) {
+        $("#main-meal").append(getdetail());
+
+    }
 
     // $("#side-meal .howmany").text("x "+??);
     // $("#side-meal .howmuch").text("$ "+??);
@@ -20,16 +27,70 @@ $(document).ready(function() {
 
 });
 
-$("#main-meal").click(function() {
-    $("").insertAfter("#main-meal").show('slow');
+var mclick = 0;
+$("#main-meal .button").click(function() {
+    if (mclick == 0) { //click once
+
+        $("#side-meal").animate({
+            marginTop: "30px",
+            marginBottom: "0px",
+        }, 300);
+        $(".detail").slideDown("200");
+        mclick = 1;
+    } else { //click twice        
+        $("#side-meal").animate({
+            marginTop: "0px",
+            marginBottom: "-8px",
+        }, 300);
+        $(".detail").slideUp("200");
+        mclick = 0;
+    }
 });
 
-$("#side-meal").click(function() {
-
-    $("").insertAfter("#side-meal");
+var sclick = 0;
+$("#side-meal .button").click(function() {
+    if (sclick == 0) { //click once
+        //$("").insertAfter("#side-meal");
+        $("#drinks").animate({
+            marginTop: "30px",
+            marginBottom: "0px",
+        }, 300);
+        sclick = 1;
+    } else { //click twice
+        $("#drinks").animate({
+            marginTop: "0px",
+            marginBottom: "-8px",
+        }, 300);
+        sclick = 0;
+    }
 });
 
-$("#drinks").click(function() {
-
+var dclick = 0;
+$("#drinks .button").click(function() {
     $("").insertAfter("#drinks");
+    if (dclick == 0) { //click once
+
+        dclick = 1;
+    } else { //click twice
+
+        dclick = 0;
+    }
 });
+
+function getDetail(name, money) {
+    var s = "";
+    s = s + '<div class="detail" style="display:none">';
+    s = s + '   <p class="close"></p>';
+    s = s + '   <p class="name">' + name + '</p>';
+    s = s + '   <label class="check-container">不要洋蔥';
+    s = s + '       <input type="checkbox">';
+    s = s + '       <span class="checkmark"></span>';
+    s = s + '   </label>';
+    s = s + '   <label class="check-container">不要酸黃瓜';
+    s = s + '       <input type="checkbox" >';
+    s = s + '       <span class="checkmark"></span>';
+    s = s + '   </label>';
+    s = s + '   <p class="howmuch">' + money + '</p>';
+    s = s + '</div>';
+    return s;
+}

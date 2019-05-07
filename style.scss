@@ -9,8 +9,8 @@ body {
     width: 100%;
     height: 100%;
     -webkit-user-select: none;
-    overflow-y: hidden;
     overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0px;
     padding: 0;
 }
@@ -176,8 +176,8 @@ body {
         }
     }
     #side-meal {
-        margin-top: 30px;
-        //margin-bottom: -8px;
+        //margin-top: 30px;
+        margin-bottom: -8px;
         .button {
             @extend %button-style;
             img {
