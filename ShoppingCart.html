@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div class="navigationbar">
+        <div class="container">
+            <p></p>
+            <p class="title">購物車</p>
+        </div>
+
+    </div>
+
+    <div class="list">
+        <div id="empty">
+            <img src="src/unmannedRestaurant03@3x.png">
+            <div>
+                <p>購物車內尚無餐點</p>
+                <p>快點餐，讓購物車多點東西吧！</p>
+            </div>
+        </div>
+
+        <div id="notempty">
+            <div id="main-meal">
+                <div class="button">
+                    <img src="src/unmannedRestaurant07@2x.png">
+                    <p>我的主餐</p>
+                    <p class="howmany">x 2</p>
+                    <p class="howmuch">$ 160</p>
+                </div>
+                <div class="detail">
+                    <p class="close"></p>
+                    <p class="name">黑膠鮮檸鮭魚堡</p>
+                    <label class="check-container">不要洋蔥
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-container">不要酸黃瓜
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p class="howmuch">$ 80</p>
+                </div>
+                <div class="detail">
+                    <p class="close"></p>
+                    <p class="name">黑膠鮮檸鮭魚堡</p>
+                    <label class="check-container">不要洋蔥
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    <label class="check-container">不要酸黃瓜
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    <p class="howmuch">$ 80</p>
+                </div>
+            </div>
+            <div id="side-meal">
+                <div class="button">
+                    <img src="src/unmannedRestaurant08@2x.png">
+                    <p>我的副餐</p>
+                    <p class="howmany">x 0</p>
+                    <p class="howmuch">$ 0</p>
+                </div>
+            </div>
+            <div id="drinks">
+                <div class="button">
+                    <img src="src/unmannedRestaurant09@2x.png">
+                    <p>我的飲料</p>
+                    <p class="howmany">x 0</p>
+                    <p class="howmuch">$ 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="check">
+        <div class="container">
+            <div class="checkout">
+                <p>結帳</p>
+            </div>
+            <div class="total">
+                <p>總金額</p>
+                <p class="money">$ 160</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
