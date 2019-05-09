@@ -63,6 +63,39 @@
   transform: rotate(45deg);
 }
 
+.navigationbar {
+  position: fixed;
+  top: 0px;
+  font-weight: 600;
+  width: 375px;
+  height: 64px;
+  margin: 0px;
+  background-color: #ff7b9f;
+  z-index: 5;
+}
+.navigationbar .title {
+  font-size: 17.5px;
+  position: absolute;
+  top: 31px;
+  left: 171px;
+}
+.navigationbar .back {
+  width: 22px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  stroke: black;
+  stroke-width: 3px;
+}
+.navigationbar .cart {
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  top: 29px;
+  left: 329px;
+}
+
 html {
   background-color: #ff7b9f;
   color: white;
@@ -166,25 +199,12 @@ body {
   left: 256px;
 }
 
-.navigationbar {
-  font-weight: 500;
-  width: 375px;
-  height: 64px;
-  margin: 0px;
-  font-size: 17px;
-}
-.navigationbar .title {
-  position: absolute;
-  top: 31px;
-  left: 171px;
-}
-
 .check {
-  width: 373px;
-  height: 116px;
-  position: absolute;
+  width: 375px;
+  height: 98px;
+  position: fixed;
   z-index: 5px;
-  top: 567px;
+  bottom: 0px;
   background-image: url("src/rectangle@3x.png");
   background-size: 100% 100%;
 }
@@ -237,6 +257,12 @@ body {
   font-weight: 300;
 }
 
+#notempty {
+  position: relative;
+  top: 64px;
+  height: 505px;
+  overflow-y: scroll;
+}
 #notempty #main-meal {
   margin-top: 24px;
   margin-bottom: -8px;

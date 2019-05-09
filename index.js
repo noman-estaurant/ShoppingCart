@@ -26,6 +26,7 @@ $(document).ready(function() {
     //$(".check").show()
 
     $("#main-meal").append(getDetail("xxx", "80"));
+
 });
 
 var mclick = 0;

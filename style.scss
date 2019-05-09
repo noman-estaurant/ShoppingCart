@@ -1,4 +1,5 @@
 @import 'checkbox';
+@import 'bar';
 html {
     background-color: rgb(255, 123, 159);
     color: white;
@@ -102,25 +103,12 @@ body {
     }
 }
 
-.navigationbar {
-    font-weight: 500;
-    width: 375px;
-    height: 64px;
-    margin: 0px;
-    font-size: 17px;
-    .title {
-        position: absolute;
-        top: 31px;
-        left: 171px;
-    }
-}
-
 .check {
-    width: 373px;
-    height: 116px;
-    position: absolute;
+    width: 375px;
+    height: 98px;
+    position: fixed;
     z-index: 5px;
-    top: 567px;
+    bottom: 0px;
     background-image: url('src/rectangle@3x.png');
     background-size: 100% 100%;
     .checkout {
@@ -176,6 +164,10 @@ body {
 }
 
 #notempty {
+    position: relative;
+    top: 64px;
+    height: 505px;
+    overflow-y: scroll;
     #main-meal {
         margin-top: 24px;
         margin-bottom: -8px;
