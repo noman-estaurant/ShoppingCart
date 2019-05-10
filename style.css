@@ -64,7 +64,6 @@
   height: 64px;
   margin: 0px;
   background-color: #ff7b9f;
-<<<<<<< HEAD
   z-index: 5; }
   .navigationbar .title {
     font-size: 17.5px;
@@ -79,53 +78,26 @@
     left: 25px;
     stroke: black;
     stroke-width: 3px; }
-  .navigationbar .cart {
-    width: 22px;
-    height: 20px;
+  .navigationbar .cart img {
     position: absolute;
     top: 29px;
-    left: 329px; }
-=======
-  z-index: 5;
-}
-.navigationbar .title {
-  font-size: 17.5px;
-  position: absolute;
-  top: 31px;
-  left: 171px;
-}
-.navigationbar .back {
-  width: 22px;
-  height: 30px;
-  position: absolute;
-  top: 30px;
-  left: 25px;
-  stroke: black;
-  stroke-width: 3px;
-}
-.navigationbar .cart img {
-  position: absolute;
-  top: 29px;
-  left: 329px;
-  width: 22px;
-  height: 20px;
-}
-.navigationbar .cart .added {
-  font-weight: 400;
-  position: absolute;
-  top: 24px;
-  left: 346px;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background-color: #ff7b9f;
-  z-index: 6;
-  color: white;
-  font-size: 8px;
-  line-height: 15px;
-  text-align: center;
-}
->>>>>>> bfa699b247fcd8e391a354e74a04b05d20928583
+    left: 329px;
+    width: 22px;
+    height: 20px; }
+  .navigationbar .cart .added {
+    font-weight: 400;
+    position: absolute;
+    top: 24px;
+    left: 346px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #ff7b9f;
+    z-index: 6;
+    color: white;
+    font-size: 8px;
+    line-height: 15px;
+    text-align: center; }
 
 html {
   background-color: #ff7b9f;
@@ -226,8 +198,10 @@ body {
   position: fixed;
   z-index: 5px;
   bottom: 0px;
-<<<<<<< HEAD
-  background-image: url("src/rectangle@3x.png");
+  background-color: white;
+  box-shadow: 0px 2px 7px rgba(19, 0, 6, 0.78);
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
   background-size: 100% 100%; }
   .check .checkout {
     width: 85px;
@@ -252,62 +226,30 @@ body {
     left: 279px; }
     .check .total .money {
       font-size: 15px; }
-=======
-  background-color: white;
-  box-shadow: 0px 2px 7px rgba(19, 0, 6, 0.78);
-  border-top-left-radius: 29px;
-  border-top-right-radius: 29px;
-  background-size: 100% 100%;
-}
-.check .checkout {
-  width: 85px;
-  height: 43px;
-  font-size: 17px;
-  border-radius: 21.5px;
-  background: linear-gradient(90deg, #ff78ab 10%, #ff8f5e 90%);
-  box-shadow: 0px 2px 5px rgba(158, 77, 100, 0.5);
-  text-align: center;
-  line-height: 43px;
-  position: absolute;
-  top: 32px;
-  left: 52px;
-}
-.check .total {
-  font-size: 17px;
-  text-align: right;
-  line-height: 22px;
-  font-weight: 600;
-  color: black;
-  position: absolute;
-  top: 32px;
-  left: 279px;
-}
-.check .total .money {
-  font-size: 15px;
-}
->>>>>>> bfa699b247fcd8e391a354e74a04b05d20928583
 
-#empty img {
-  position: absolute;
-  width: 236px;
-  top: 164px;
-  left: 70px; }
-
-#empty div {
-  text-align: center;
-  position: absolute;
-  line-height: 36px;
-  top: 403px;
-  left: 86.5px; }
-  #empty div p:first-of-type {
-    font-size: 23px;
-    font-weight: 700; }
-  #empty div p:last-of-type {
-    font-size: 14px;
-    font-weight: 300; }
+#empty {
+  background-color: #ff7b9f; }
+  #empty img {
+    position: absolute;
+    width: 236px;
+    top: 164px;
+    left: 70px; }
+  #empty div {
+    text-align: center;
+    position: absolute;
+    line-height: 36px;
+    top: 403px;
+    left: 86.5px; }
+    #empty div p:first-of-type {
+      font-size: 23px;
+      font-weight: 700; }
+    #empty div p:last-of-type {
+      font-size: 14px;
+      font-weight: 300; }
 
 #notempty {
   display: flexbox;
+  background-color: #ff7b9f;
   flex-direction: column;
   position: relative;
   top: 64px;

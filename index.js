@@ -30,25 +30,10 @@ $(document).ready(function() {
 var mclick = 0;
 $("#main-meal .button").click(function() {
     if (mclick == 0) { //click once
-
-
-       // $("#side-meal").animate({
-      //      marginTop: "30px",
-      //      marginBottom: "0px",
-     //   }, 300);
-        //$(".detail").slideDown(200);
-
          $(".detail").toggleClass('showing-detail', 'slow');
         mclick = 1;
     } else { //click twice        
-      //  $("#side-meal").animate({
-     //       marginTop: "0px",
-     //       marginBottom: "-8px",
-     //   }, 300);
-        //$(".detail").slideUp(200);
-
         $(".detail").toggleClass('showing-detail', 'slow');
-
         mclick = 0;
     }
 });

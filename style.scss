@@ -147,6 +147,7 @@ body {
 }
 
 #empty {
+    background-color: rgb(255, 123, 159);
     img {
         position: absolute;
         width: 236px;
@@ -172,6 +173,7 @@ body {
 
 #notempty {
     display: flexbox;
+    background-color: rgb(255, 123, 159);
     flex-direction: column;
     position: relative;
     top: 64px;
