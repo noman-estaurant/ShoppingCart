@@ -56,7 +56,7 @@ body {
     margin: auto;
     margin-bottom: 8px;
     width: 311px;
-    height: 79px;
+    height: 0;
     background-color: white;
     border-radius: 40px;
     box-shadow: 0px 2px 10px rgba(19, 0, 6, 0.78);
@@ -101,6 +101,10 @@ body {
         top: 30px;
         left: 256px;
     }
+}
+
+.showing-detail{
+    height: 97px;
 }
 
 .check {
@@ -164,6 +168,8 @@ body {
 }
 
 #notempty {
+    display: flexbox;
+    flex-direction: column;
     position: relative;
     top: 64px;
     height: 505px;
