@@ -22,8 +22,6 @@ $(document).ready(function() {
     // $("#drinks .howmany").text("x "+??);
     // $("#drinks .howmuch").text("$ "+??);
 
-    //轉場動畫
-    //$(".check").show()
 
     $("#main-meal").append(getDetail("xxx", "80"));
 
@@ -32,6 +30,7 @@ $(document).ready(function() {
 var mclick = 0;
 $("#main-meal .button").click(function() {
     if (mclick == 0) { //click once
+
 
        // $("#side-meal").animate({
       //      marginTop: "30px",
@@ -49,6 +48,7 @@ $("#main-meal .button").click(function() {
         //$(".detail").slideUp(200);
 
         $(".detail").toggleClass('showing-detail', 'slow');
+
         mclick = 0;
     }
 });

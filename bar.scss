@@ -2,7 +2,7 @@
     position: fixed;
     top: 0px;
     font-weight: 600;
-    width: 375px;
+    width: 100%;
     height: 64px;
     margin: 0px;
     background-color: rgb(255, 123, 159);
@@ -23,10 +23,27 @@
         stroke-width: 3px;
     }
     .cart {
-        width: 22px;
-        height: 20px;
-        position: absolute;
-        top: 29px;
-        left: 329px;
+        img {
+            position: absolute;
+            top: 29px;
+            left: 329px;
+            width: 22px;
+            height: 20px;
+        }
+        .added {
+            font-weight: 400;
+            position: absolute;
+            top: 24px;
+            left: 346px;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: rgb(255, 123, 159);
+            z-index: 6;
+            color: white;
+            font-size: 8px;
+            line-height: 15px;
+            text-align: center;
+        }
     }
 }
