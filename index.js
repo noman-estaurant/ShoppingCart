@@ -25,8 +25,12 @@ $(document).ready(function() {
 
     //---------------------------------------(2019.5.11) by Wu
     //Recieve data from the menu page
-    // (number, name-of-main-meal, price)
-    $("#main-meal").append(getDetail(2, "xxx", "80"));
+    //Passing(number-of-meal, name-of-meal, price)
+
+     $("#main-meal").append(getMainDetail(2, "#name", 80));
+     $("#side-meal").append(getSideDetail(2, "#name", 20));
+     $("#drinks").append(getDrinkDetail(2, "#name", 20));
+
 
 });
 
@@ -79,7 +83,7 @@ function removeThis(){
 
 
 
-function getDetail(n, name, money) {
+function getMainDetail(n, name, money) {
     var s = "";
     s = s + '<div class="detail" >';
     s = s + '   <p class="close" onclick="ReallyDelete($(this))">✖</p>';
@@ -89,6 +93,42 @@ function getDetail(n, name, money) {
     s = s + '       <span class="checkmark"></span>';
     s = s + '   </label>';
     s = s + '   <label class="check-container">不要酸黃瓜';
+    s = s + '       <input type="checkbox" >';
+    s = s + '       <span class="checkmark"></span>';
+    s = s + '   </label>';
+    s = s + '   <p class="howmuch">' + "$ " + money + '</p>';
+    s = s + '</div>';
+    return s.repeat(n);
+}
+
+function getSideDetail(n, name, money) {
+    var s = "";
+    s = s + '<div class="detail">';
+    s = s + '   <p class="close" onclick="ReallyDelete($(this))">✖</p>';
+    s = s + '   <p class="name">' + name + '</p>';
+    s = s + '   <label class="check-container">番茄醬';
+    s = s + '       <input type="checkbox">';
+    s = s + '       <span class="checkmark"></span>';
+    s = s + '   </label>';
+    s = s + '   <label class="check-container">芥末醬';
+    s = s + '       <input type="checkbox" >';
+    s = s + '       <span class="checkmark"></span>';
+    s = s + '   </label>';
+    s = s + '   <p class="howmuch">' + "$ " + money + '</p>';
+    s = s + '</div>';
+    return s.repeat(n);
+}
+
+function getDrinkDetail(n, name, money) {
+    var s = "";
+    s = s + '<div class="detail">';
+    s = s + '   <p class="close" onclick="ReallyDelete($(this))">✖</p>';
+    s = s + '   <p class="name">' + name + '</p>';
+    s = s + '   <label class="check-container">去冰';
+    s = s + '       <input type="checkbox">';
+    s = s + '       <span class="checkmark"></span>';
+    s = s + '   </label>';
+    s = s + '   <label class="check-container">少冰';
     s = s + '       <input type="checkbox" >';
     s = s + '       <span class="checkmark"></span>';
     s = s + '   </label>';

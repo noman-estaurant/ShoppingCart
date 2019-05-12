@@ -148,6 +148,7 @@ body {
     position: absolute; }
 
 .detail {
+  overflow: hidden;
   margin: auto;
   width: 311px;
   height: 0;
