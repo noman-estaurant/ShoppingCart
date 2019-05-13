@@ -71,13 +71,17 @@ $("#drinks .button").click(function() {
 
 var temp;
 function ReallyDelete(thisObj){
-    $('.ui.basic.modal').modal('show');
+    $('.check-modal').show().animate({opacity:80},"slow")
     temp = thisObj
 }
 
-function removeThis(){       
-        temp.parent(".detail").transition("fade right", function() {
-            thisObj.parent(".detail").remove();
+function removeThis(temp){   
+        temp.parent(".detail").animate({
+            opacity: 0,
+            left: "-=50"
+            },"slow", function() {
+            temp.parent(".detail").hide()
+            temp.parent(".detail").remove();
         });
 }
 
@@ -86,7 +90,7 @@ function removeThis(){
 function getMainDetail(n, name, money) {
     var s = "";
     s = s + '<div class="detail" >';
-    s = s + '   <p class="close" onclick="ReallyDelete($(this))">✖</p>';
+    s = s + '   <p class="close" onclick="removeThis($(this))">✖</p>';
     s = s + '   <p class="name">' + name + '</p>';
     s = s + '   <label class="check-container">不要洋蔥';
     s = s + '       <input type="checkbox">';
